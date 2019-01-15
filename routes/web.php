@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/homepage', 'HomeController@home');
+Route::get('/course', 'HomeController@course');
+Route::get('/discussion', 'HomeController@discussion');
