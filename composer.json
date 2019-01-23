@@ -12,7 +12,10 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "spatie/laravel-permission": "^2.25"
+        "spatie/laravel-permission": "^2.25",
+        "kalnoy/nestedset": "^4.3",
+        "unisharp/laravel-filemanager": "v1.9.2",
+        "yajra/laravel-datatables-oracle": "^8.13"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -1,14 +1,20 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable
+/**
+ * Class User.
+ *
+ * @package namespace App\Models;
+ */
+class User extends Authenticatable implements MustVerifyEmail
 {
-    use Notifiable;
+    use Notifiable, HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -30,4 +36,13 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function courses()
+    {
+        return $this->hasMany('App\Models\Course');
+    }
+    public function programs()
+    {
+        return $this->hasMany('App\Models\Program');
+    }
 }
