@@ -12,13 +12,12 @@
 */
 
 Route::group(['middleware' => 'localization', 'prefix' => Session::get('locale')], function() {
-
-        Route::get('/', 'HomeController@home');
-        Route::get('/course', 'HomeController@course');
-        Route::get('/discussion', 'HomeController@discussion');
-
-        Route::post('/lang', [
-            'as' => 'switchLang',
-            'uses' => 'LangController@postLang',
-        ]);
-  });
+	
+    Route::get('/', 'HomeController@home');
+    Route::get('/course', 'HomeController@course');
+    Route::get('/discussion', 'HomeController@discussion');
+    Route::post('/lang', [
+        'as' => 'switchLang',
+        'uses' => 'LangController@postLang',
+    ]);
+});

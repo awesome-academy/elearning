@@ -18,56 +18,58 @@
 
     <div class="row">
     <div class="col-md-3 list-left">
-        <h5><b>Refine your search</b></h5>
+        <h5><b>{{ Lang::get('label.refine_your_search') }}</b></h5>
         <section class="sec-left">
-            <h6>Availability</h6>
-            <div class="r-left list"><a class="sp-name" href="#">Currrent</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Starting Soon</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Upcoming</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Self-Paced</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Archived   </a></div>
+            <h6>{{ Lang::get('label.availability') }}</h6>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.current') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.starting_soon') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.upcoming') }}</a></div>
         </section>
 
         <section class="sec-left">
-            <h6>Subjects</h6>
-            <div class="r-left list"><a class="sp-name" href="#">Architecture</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Art & Culture</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Biology & Life Sciences</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Bussiness & Management</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Chemistry</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Communiation</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Computer Sciences</a></div>
+            <h6>{{ Lang::get('label.subjects') }}</h6>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.architecture') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">
+            {{ Lang::get('label.art') }} &amp; {{ Lang::get('label.culture') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">
+            {{ Lang::get('label.biology') }} &amp; {{ Lang::get('label.life_sciences') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">
+            {{ Lang::get('label.business') }} &amp; {{ Lang::get('label.management') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.chemistry') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.communiation') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.computer_science') }}</a></div>
         </section>
 
         <section class="sec-left">
-            <h6>Courses & Programs</h6>
-            <div class="r-left list"><a class="sp-name" href="#">All Courses</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">All Programs</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Credit-Eligible</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Master's Degress</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">MicroMaster&reg; Programs</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Professional Certificate</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Professional Education</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Verifield</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">XSeries</a></div>
+            <h6>{{ Lang::get('label.course') }} &amp; {{ Lang::get('label.program') }}</h6>
+            <div class="r-left list"><a class="sp-name" href="#">
+            {{ Lang::get('label.all') }} {{ Lang::get('label.course') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">
+            {{ Lang::get('label.all') }} {{ Lang::get('label.program') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">
+            {{ Lang::get('label.professional') }} {{ Lang::get('label.certificate') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">
+            {{ Lang::get('label.professional') }} {{ Lang::get('label.education') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.verified') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.xseries') }}</a></div>
         </section>
-        
+
         <section class="sec-left">
-            <h6>School</h6>
+            <h6>{{ Lang::get('label.school') }}</h6>
             {!! Form::select('', ['Filter by School', 'UNETI', 'BKA', 'FPT']) !!}
             {!! Form::button('Submit', ['class' => 'btn btn-outline-info']) !!}     
         </section>
 
         <section class="sec-left">
-            <h6>Level</h6>
-            <div class="r-left list"><a class="sp-name" href="#">Introductory</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Intermediate</a></div>
-            <div class="r-left list"><a class="sp-name" href="#">Advanced</a></div>
+            <h6>{{ Lang::get('label.level') }}</h6>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.introductory') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.intermediate') }}</a></div>
+            <div class="r-left list"><a class="sp-name" href="#">{{ Lang::get('label.advanced') }}</a></div>
         </section>
-        
+
     </div>
     <div class="col-md-9 right-course">
-        <div class="header search-featured-courses"><h5>Featured Courses</h5></div>
+        <div class="header search-featured-courses"><h5>{{ Lang::get('label.featured') }} {{ Lang::get('label.course') }}</h5></div>
         <div class="row course-content">
             @foreach (range(0, 8) as $number)       
             <a href="#">
