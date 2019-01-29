@@ -17,11 +17,8 @@
             <li class="crumb">
                 <span>&nbsp; &gt; </span>Teaching Critical Thinking through Art with the National Gallery of Art
             </li>
-<<<<<<< HEAD
-        </ol>
-=======
         </ol> 
->>>>>>> Front end detail course
+
         </div>
 
         <div class="dt-content row">
