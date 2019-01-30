@@ -11,7 +11,7 @@ return [
     'password' => 'Mật khẩu',
     'remember_me' => 'Ghi nhớ đăng nhập',
     'forgot_password' => 'Quên mật khẩu',
-    'home' => 'Home',
+    'home' => 'Home', 
 
     //Home page
     'course' => 'Course',

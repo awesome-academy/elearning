@@ -1,6 +1,6 @@
 @extends('homepages.master')
 @section('title', 'Detail')
-@section('content')
+@section('content') 
 
 <div class="container">
     <div class="dt-header">
