@@ -73,10 +73,10 @@ class CategoryController extends Controller
         } catch (Exception $e) {
             DB::rollback();
 
-            return response()->json(['success' => false, 'message' => $e], 500);
+            return response()->json(['success' => false, 'message' => $e->getMessage()], 500);
         }
 
-        return response()->json(['success' => true, 'message' => ___('controlpanel.category.update_success')], 200);
+        return response()->json(['success' => true, 'message' => trans('controlpanel.category.store_success')], 200);
     }
 
     /**
@@ -127,10 +127,10 @@ class CategoryController extends Controller
         } catch (Exception $e) {
             DB::rollback();
 
-            return response()->json(['success' => false, 'message' => $e], 500);
+            return response()->json(['success' => false, 'message' => $e->getMessage()], 500);
         }
 
-        return response()->json(['success' => true, 'message' => ___('controlpanel.category.update_success')], 200);
+        return response()->json(['success' => true, 'message' => trans('controlpanel.category.update_success')], 200);
     }
 
     /**
