@@ -1,4 +1,12 @@
-* {
+a {
+    color: #2968aa;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px dotted #2968aa;
+    color: #2968aa;
+    text-decoration: none;
 }
 
 header {
@@ -257,4 +265,159 @@ header {
     border: 1px solid #313131;
     border-radius: 3px;
     padding: 5px;
+} 
+
+/* Detail Course */
+.dt-header {
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 20px;
+}
+
+.dt-header .dt-link ol{
+    font-size: 13px;
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.dt-header .dt-name{
+    margin-left: 45px;
+}
+
+.dt-header .dt-action {
+    margin-top: 40px;
+}
+
+.dt-header .dt-action h6{
+    text-align: center;
+    font-weight: bold;
+}
+
+.dt-header .dt-confirm {
+    margin-top: 5px;
+    display: flex;
+}
+
+.dt-header .dt-confirm input[type=checkbox]{
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.dt-header .dt-confirm label{
+    font-size: 12px;
+}
+
+.dt-main {
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+.dt-main .dt-left{
+    border: 1px solid #cacaca;
+    margin-right: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.dt-main .dt-left h5{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.dt-main .dt-left .dt-teacher{
+    padding-bottom: 20px;
+}
+
+.dt-main .dt-left .dt-teacher .dt-teacher-item{
+    text-align: center;
+}
+
+.dt-main .dt-left .dt-teacher .dt-teacher-item a{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.dt-main .dt-left .dt-teacher .dt-teacher-item .instructor-name{
+    margin-bottom: 0px;
+}
+
+.dt-main .dt-left .dt-teacher .dt-teacher-item .instructor-position{
+    color: #4e4e4e;
+    margin-bottom: 0px;
+}
+
+.dt-main .dt-left .dt-teacher .dt-teacher-item .instructor-org{
+    font-weight: 500;
+}
+
+.dt-main .dt-left .dt-teacher img{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 4px solid #e6e6e6;
+}
+
+.dt-main .dt-left .dt-teacher img:hover{
+    border-color: #2968aa;
+}
+
+.dt-main .dt-left hr{
+    background: #cacaca;
+}
+
+.dt-main .dt-left #img-degree{
+    width: 250px;
+    float: right;
+}
+
+.dt-main .dt-left .dt-degree ul{
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.dt-main .dt-left .dt-degree .media-block span{
+    float: left;
+    color: #fff;
+    padding: 10px;
+    background-color: #1aa1de;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.dt-main .dt-right{
+    padding-top: 20px;
+    border: 1px solid #cacaca;
+}
+
+.dt-main .dt-right ul{
+    font-size: 14px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.dt-main .dt-right li{  
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 10px;
+}
+
+.dt-main .dt-right ul li span{
+    color: #555;
+    margin-right: 10px;
+}
+
+.dt-main .dt-right .social-share{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dt-main .dt-right .social-share .social-media-sharing i{
+    color: #fff;
+    padding: 10px;
+    background-color: #2968aa;
+    border-radius: 50%;
 }
