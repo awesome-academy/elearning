@@ -22,6 +22,7 @@ Route::group(['middleware' => 'localization', 'prefix' => Session::get('locale')
         'uses' => 'LangController@postLang',
     ]);
 });
+
 Route::get('admin/login', [
   'as' => 'login',
   'uses' => 'Auth\LoginController@showLoginForm'

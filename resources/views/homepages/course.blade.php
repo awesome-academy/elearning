@@ -77,7 +77,7 @@
                 <div class="img-wrapper"><img src="{!! Config::get('social.img.url') !!}/foundations_of_happiness_at_work-318210.jpg"></div>
                 <div class="banner"><span>VERIFIED</span></div>
                 <div class="verified-img"><img src="{!! Config::get('social.img.url') !!}/verified.png"></div>
-                <div class="name-course">
+                <div class="name-course"> 
                     <div class="label"><span class="sr">BerkeleyX</span></div>
                     <h5>The Foundations of Happiness at Work</h5>
                     <div class="course-start-info">Current</div>
