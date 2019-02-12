@@ -74,3 +74,59 @@ if (!function_exists('renderItem')) {
         return $return;
     }
 }
+if (!function_exists('renderSubHead')) {
+    function renderSubHead($item)
+    {
+        $return = '';
+        $return .= '<div class="m-subheader ">
+                    <div class="d-flex align-items-center">
+                        <div class="mr-auto">
+                            <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                                <li class="m-nav__item m-nav__item--home">
+                                    <a href="#" class="m-nav__link m-nav__link--icon">
+                                        <i class="m-nav__link-icon la la-home"></i>
+                                    </a>
+                                </li>';
+        foreach ($item as $value) {
+            $return .= '<li class="m-nav__separator">-</li>
+            <li class="m-nav__item">
+                <a href="#" class="m-nav__link">
+                    <span class="m-nav__link-text">' . $value . '</span>
+                </a>
+            </li>';
+        }
+        $return .= '</ul>
+                </div>
+            </div>
+        </div>';
+
+        return $return;
+    }
+}
+if (!function_exists('renderTableHead')) {
+    function renderTableHead($name, $link)
+    {
+        $return = '';
+        $return .= '<div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="' . $link . '" class="btn btn-accent m-btn m-btn--custom m-btn--icon m-btn--air">
+                            <span>
+                                <i class="la la-plus"></i>
+                                <span>' . $name . '</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="m-portlet__nav-item"></li>
+                </ul>
+            </div>
+        </div>';
+
+        return $return;
+    }
+}
