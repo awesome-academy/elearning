@@ -15,4 +15,5 @@ const mix = require('laravel-mix');
 mix.copyDirectory('resources/libraries', 'public/vendor');
 mix.copyDirectory('resources/assets/img', 'public/img');
 mix.copyDirectory('resources/assets/js/admin', 'public/js/admin');
+mix.copyDirectory('resources/assets/js', 'public/js');
 mix.sass('resources/assets/sass/mystyles.scss', 'public/css');
