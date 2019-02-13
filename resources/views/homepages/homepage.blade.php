@@ -40,25 +40,27 @@
         <h4 class="title">{{ Lang::get('label.popular_subjects') }}</h2>
         <div class="row subject-container">
             <div class="col-md-4 subject-block">
-                <a href="" class="subject-link"><span class="subject-icon fa fa-keyboard-o fa-2x" aria-hidden="true"></span>
+                <a href="#" class="subject-link"><span class="subject-icon fas fa-keyboard fa-2x" aria-hidden="true"></span>
                 &nbsp; {{ Lang::get('label.computer_science') }}</a>
             </div>
             <div class="col-md-4 subject-block">
-                <a href="/course/subject/language" class="subject-link"><span class="subject-icon fa fa-language fa-2x" aria-hidden="true"></span> &nbsp; {{ Lang::get('label.computer_science') }}</a>
+                <a href="#" class="subject-link"><span class="subject-icon fas fa-language fa-2x" aria-hidden="true"></span> 
+                &nbsp; {{ Lang::get('label.language') }}</a>
             </div>
             <div class="col-md-4 subject-block">
-                <a href="/course/subject/data-science" class="subject-link"><span class="subject-icon fa fa-line-chart fa-2x" aria-hidden="true"></span>&nbsp; {{ Lang::get('label.computer_science') }}</a>
+                <a href="#" class="subject-link"><span class="subject-icon fas fa-chart-line fa-2x" aria-hidden="true"></span>
+                &nbsp; {{ Lang::get('label.data_sciense') }}</a>
             </div>      
             <div class="col-md-4 subject-block">
-                <a href="" class="subject-link"><span class="subject-icon fa fa-briefcase fa-2x" aria-hidden="true"></span>
+                <a href="#" class="subject-link"><span class="subject-icon fas fa-briefcase fa-2x" aria-hidden="true"></span>
                 &nbsp;{{ Lang::get('label.business') }} &amp; {{ Lang::get('label.management') }}</a>
             </div>
             <div class="col-md-4 subject-block">
-                <a href="" class="subject-link"><span class="subject-icon fa fa-cogs fa-2x" aria-hidden="true"></span>
+                <a href="#" class="subject-link"><span class="subject-icon fas fa-cogs fa-2x" aria-hidden="true"></span>
                 &nbsp;{{ Lang::get('label.engineering') }}</a>
             </div>
             <div class="col-md-4 subject-block">
-                <a href="" class="subject-link"><span class="subject-icon fa fa-users fa-2x" aria-hidden="true"></span>
+                <a href="#" class="subject-link"><span class="subject-icon fas fa-users fa-2x" aria-hidden="true"></span>
                 &nbsp;{{ Lang::get('label.humanities') }}</a>
             </div>
             <button type="button" class="btn btn-outline-info">{{ Lang::get('label.browse_courses_and_programs') }}</button>     

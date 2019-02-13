@@ -70,27 +70,27 @@
         <ul class="list-inline footer-li">
             <li>
                 <a href="#" class="social-links external" title="Facebook" rel="noreferrer">
-                <span class="icon fa fa-2x fa-facebook-square" aria-hidden="true"></span></a>
+                <span class="fab fa-2x fa-facebook-square" aria-hidden="true"></span></a>
             </li>
             <li>
                 <a href="#" class="social-links external" title="Twitter" rel="noreferrer">
-                <span class="icon fa fa-2x fa-twitter-square" aria-hidden="true"></span></a>
+                <span class="fab fa-2x fa-twitter-square" aria-hidden="true"></span></a>
             </li>
             <li>
                 <a href="#" class="social-links external" title="Youtube" rel="noreferrer">
-                <span class="icon fa fa-2x fa-youtube-square" aria-hidden="true"></span></a>
+                <span class="fab fa-2x fa-youtube-square" aria-hidden="true"></span></a>
             </li>
             <li>
                 <a href="#" class="social-links external" title="LinkedIn" rel="noreferrer">
-                <span class="icon fa fa-2x fa-linkedin-square" aria-hidden="true"></span></a>
+                <span class="fab fa-2x fa-linkedin" aria-hidden="true"></span></a>
             </li>
             <li>
                 <a href="#" class="social-links external" title="Google+" rel="noreferrer">
-                <span class="icon fa fa-2x fa-google-plus-square" aria-hidden="true"></span></a>
+                <span class="fab fa-2x fa-google-plus-square" aria-hidden="true"></span></a>
             </li>
             <li>
                 <a href="#" class="social-links external" title="Reddit" rel="noreferrer">
-                <span class="icon fa fa-2x fa-reddit-square" aria-hidden="true"></span></a>
+                <span class="fab fa-2x fa-reddit-square" aria-hidden="true"></span></a>
             </li>
         </ul>
         <div class="footer-li">
