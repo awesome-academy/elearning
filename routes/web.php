@@ -75,3 +75,27 @@ Route::group(['prefix' => 'admin'], function() {
 	Route::get('filemanager', '\UniSharp\LaravelFilemanager\Controllers\LfmController@show');
     Route::post('filemanager/upload', '\UniSharp\LaravelFilemanager\Controllers\UploadController@upload');
 });
+
+
+// search
+
+    Route::post('/search', 'HomeController@getSearch');
+    Route::post('search/name', 'Home@getSearchAjax')->name('search');
+    
+
+    // scourse
+
+    Route::post('searchc','HomeController@getSearchc');
+
+
+// search
+ 
+
+//discussion
+
+
+    Route::get('/discussion/post','PostController@getpost');
+
+//discussion
+
+
