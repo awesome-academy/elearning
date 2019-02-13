@@ -28,9 +28,10 @@
         </li>
     </ul>  
 
-    {!! Form::open(['class' => 'form-inline my-2 my-lg-0']) !!}
+   
+    {!! Form::open(['class' => 'form-inline my-2 my-lg-0', 'url'=>'search']) !!}
     <div class="input-group mb-2">
-    {!! Form::text('search_name', '' , ['class' => 'form-control col-md-12']) !!}
+    {!! Form::text('key', '' , ['class' => 'form-control col-md-12','placeholder' =>  'key']) !!}
     <div class="input-group-append">
     {!! Form::button('<span class="fa fa-search"></span>', ['class' => 'btn btn-outline-secondary']) !!} 
     </div>
@@ -41,3 +42,26 @@
 </nav>
 </div>
 </header>
+
+ <script>
+$(document).ready(function()
+{
+    $('#key').keyup(function()
+    {
+        var key = $(this).val(); 
+        if(key >= 3) 
+        {
+            var _token = $('input[name="_token"]').val(); 
+            url:"{{ route('search') }}", 
+            method:"POST", .
+            data:{key:key, _token:_token},
+            success:function(data)
+            { 
+            $('#list').fadeIn();  
+            $('#list').html(data); 
+            }
+        }
+    }
+}
+</script>
+

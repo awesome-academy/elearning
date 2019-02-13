@@ -29,7 +29,8 @@
     <div class="bd-example">
         <h4 class="search-title">{{ Lang::get('label.what_do_you_want_to_learn_?') }}</h2>
         <div class="input-group mb-3">
-            {!! Form::text('', '' , ['class' => 'form-control col-md-6']) !!}
+            {!! Form::open(['class' => 'form-inline my-2 my-lg-0', 'url'=>'searchc']) !!}
+            {!! Form::text('key', '' , ['class' => 'form-control col-md-6','placeholder' =>  'key']) !!}
             <div class="input-group-append">
             {!! Form::button('<span class="fa fa-search"></span>', ['class' => 'btn btn-outline-secondary']) !!} 
             </div>
