@@ -49,5 +49,4 @@ class Program extends Model
     {
         return $this->belongsTo('App\Models\User');
     }
-
 }

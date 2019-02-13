@@ -72,6 +72,36 @@ Route::group(['prefix' => 'admin'], function() {
 		  'uses' => 'Admin\CategoryController@destroy'
 		]);
 	});
+	Route::group(['prefix' => 'program'], function() {
+		Route::get('/', [
+		  'as' => 'programIndex',
+		  'uses' => 'Admin\ProgramController@index'
+		]);
+		Route::post('/', [
+		  'as' => '',
+		  'uses' => 'Admin\ProgramController@tableData'
+		]);
+		Route::get('/new', [
+		  'as' => 'programNew',
+		  'uses' => 'Admin\ProgramController@create'
+		]);
+		Route::post('/new', [
+		  'as' => '',
+		  'uses' => 'Admin\ProgramController@store'
+		]);
+		Route::get('/edit/{id}', [
+		  'as' => 'programEdit',
+		  'uses' => 'Admin\ProgramController@edit'
+		]);
+		Route::post('/edit/{id}', [
+		  'as' => '',
+		  'uses' => 'Admin\ProgramController@update'
+		]);
+		Route::delete('/{id}', [
+		  'as' => '',
+		  'uses' => 'Admin\ProgramController@destroy'
+		]);
+	});
 	Route::get('filemanager', '\UniSharp\LaravelFilemanager\Controllers\LfmController@show');
     Route::post('filemanager/upload', '\UniSharp\LaravelFilemanager\Controllers\UploadController@upload');
 });
