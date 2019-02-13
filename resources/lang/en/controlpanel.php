@@ -56,6 +56,51 @@ return [
         'update_success' => 'Update Successfully',
         'store_success' => 'Create Successfully',
     ],
+    'program' => [
+        'name' => 'Program',
+        'column' => [
+            'name' => [
+                'name' => 'Name',
+            ],
+            'slug' => [
+                'name' => 'Slug',
+            ],
+            'description' => [
+                'name' => 'Description',
+            ],
+            'content' => [
+                'name' => 'Content',
+            ],
+            'thumb' => [
+                'name' => 'Image',
+            ],
+            'course' => [
+                'name' => 'Course',
+            ],
+            'action' => [
+                'name' => 'Actions',
+            ],
+            'category' => [
+                'name' => 'Category',
+            ],
+            'course_category' => [
+                'name' => 'Course Category',
+            ],
+            'update_at' => [
+                'name' => 'Update At',
+            ],
+        ],
+        'view' => [
+            'index' => 'List',
+            'new' => 'New',
+            'edit' => 'Edit',
+        ],
+        'update_success' => 'Update Successfully',
+        'store_success' => 'Create Successfully',
+        'category' => 'Category',
+        'publish' => 'Publish',
+    ],
     'choose_button' => 'Choose',
     'submit_button' => 'Submit',
+    'add_button' => 'Submit',
 ];
