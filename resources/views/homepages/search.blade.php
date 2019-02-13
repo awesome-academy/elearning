@@ -46,33 +46,13 @@
 </div>
 </form>
     </div>
-    <h2>Search Result : {{$key}}    </h2>
+    <h2>    Search Result : {{$key}}    </h2>
     <div id="list">
         @foreach($key as $new)
-        <li>{{$new->name}}
+        <li> <a href="courses/{{$new->name}}">{{$new->name}}</a>
         </li>
         <li>{{$new->id}}</li>
+
         @endforeach
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
 @endsection
